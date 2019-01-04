@@ -8,3 +8,5 @@ D: derecha
 
 P: rotar
 M: colocar
+
+Q: salir
