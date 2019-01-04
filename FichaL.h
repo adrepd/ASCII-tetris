@@ -5,28 +5,26 @@
  */
 
 /* 
- * File:   FichaJ.h
+ * File:   FichaL.h
  * Author: Adrian Ulloa, 20162036
  *
- * Created on January 3, 2019, 5:08 PM
+ * Created on January 4, 2019, 11:48 AM
  */
 
-#ifndef FICHAJ_H
-#define FICHAJ_H
+#ifndef FICHAL_H
+#define FICHAL_H
 #include "Ficha.h"
 
 
-class FichaJ: public Ficha {
+class FichaL: public Ficha {
 public:
-    FichaJ(int x = 0, int y = 0);
-    FichaJ(const FichaJ& orig);
-    virtual ~FichaJ();
+    FichaL(int x = 0, int y = 0);
+    FichaL(const FichaL& orig);
+    virtual ~FichaL();
     bool mover(char input, Tablero& tab);
-    
-
 private:
 
 };
 
-#endif /* FICHAJ_H */
+#endif /* FICHAL_H */
 

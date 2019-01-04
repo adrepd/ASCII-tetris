@@ -13,8 +13,8 @@
 
 #ifndef TABLERO_H
 #define TABLERO_H
-#include "Ficha.h"
-
+//#include "Ficha.h"
+class Ficha;
 
 class Tablero {
 public:
@@ -28,8 +28,14 @@ public:
     void fijarFicha(Ficha& f);
     void mostrarFicha(Ficha& f);
     bool juegoPosible();
+    void setPuntaje(int puntaje);
+    int getPuntaje() const;
+    
+    bool procesarLinea();
+    
     char** estado;
 private:
+    int puntaje;
 };
 
 #endif /* TABLERO_H */
